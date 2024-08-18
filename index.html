@@ -13,11 +13,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="">
+  <body class="font-popins">
     <main
       class="h-screen bg-[#010313] min-h-screen bg-[url('./images/background.png')] bg-no-repeat bg-center"
     >
-      <!-- home -->
+      <!-- home section-->
       <section
         class="home text-white flex items-center justify-center h-screen hidden"
       >
@@ -33,12 +33,12 @@
           <button class="btn bg-white text-black">Play Now</button>
         </div>
       </section>
-      <!-- play ground -->
-      <section class="flex flex-col items-center space-y-6">
+      <!-- play ground section -->
+      <section class="flex flex-col items-center space-y-6 hidden">
         <!-- screen  -->
 
         <div
-          class="artboard artboard-horizontal phone-5 border-[20px] rounded-2xl border-[#010313CC] bg-[#ffffffb3] "
+          class="artboard artboard-horizontal phone-5 border-[20px] rounded-2xl border-[#010313CC] bg-[#ffffffb3]"
         >
           <div class="flex items-center justify-center">
             <p class="bg-[#2F2941] px-4 py-3 text-white rounded-b-xl">
@@ -46,7 +46,7 @@
             </p>
           </div>
 
-          <div class="flex items-center justify-center h-5/6 ">
+          <div class="flex items-center justify-center h-5/6">
             <p class="text-black text-9xl font-bold">Y</p>
           </div>
         </div>
@@ -136,6 +136,17 @@
 
             <span> 1 </span>
           </button>
+        </div>
+      </section>
+
+      <!-- scrore section -->
+      <section class="flex items-center justify-center h-full">
+        <div class="space-y-6 p-8 text-center bg-[#FFFFFF33] rounded-md">
+          <h1 class="text-6xl font-bold text-white">
+            Score : <span class="font-normal">14</span>
+          </h1>
+          <button class="btn bg-white text-black ">Play Again</button>
+          <p class="text-white font-medium">Practice will make you Pro</p>
         </div>
       </section>
     </main>
