@@ -18,8 +18,8 @@
       class="h-screen bg-[#010313] min-h-screen bg-[url('./images/background.png')] bg-no-repeat bg-center"
     >
       <!-- home section-->
-      <section
-        class="home text-white flex items-center justify-center h-screen hidden"
+      <section id="home"
+        class=" text-white flex items-center justify-center h-screen "
       >
         <div class="flex flex-col gap-8 justify-center items-center">
           <h1 class="text-8xl font-anton text-center uppercase">
@@ -30,11 +30,11 @@
             Unleash Your Keyboard Kung Fu : Press “Enter” to Play
           </p>
 
-          <button class="btn bg-white text-black">Play Now</button>
+          <button onclick="playGame()" class="btn bg-white text-black">Play Now</button>
         </div>
       </section>
       <!-- play ground section -->
-      <section class="flex flex-col items-center space-y-6 hidden">
+      <section id="play-ground" class="flex flex-col items-center space-y-6 hidden">
         <!-- screen  -->
 
         <div
@@ -140,7 +140,7 @@
       </section>
 
       <!-- scrore section -->
-      <section class="flex items-center justify-center h-full">
+      <section class="flex items-center justify-center h-full hidden">
         <div class="space-y-6 p-8 text-center bg-[#FFFFFF33] rounded-md">
           <h1 class="text-6xl font-bold text-white">
             Score : <span class="font-normal">14</span>
@@ -150,5 +150,14 @@
         </div>
       </section>
     </main>
+
+
+
+
+
+
+
+    <script src="./utilitis.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
